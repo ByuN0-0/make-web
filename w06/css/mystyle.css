@@ -1,0 +1,51 @@
+/* mystyle.css */
+#headline {
+  font-size: 40px;
+  color:rgb(72, 230, 98);
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0px;
+  padding: 10px;
+}
+#headline h1{
+  margin:0px;
+}
+#clock {
+  font-size: 20px;
+}
+#grid #list {
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0px;
+  padding: 20px;
+}
+#grid ol{
+  margin-top: 5px;
+  padding: 10px;
+}
+body {
+  margin: 0px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+@media (max-width: 800px) {
+  #grid {
+    display: block;    
+  }
+
+  #grid #list {
+    border-right: none;
+  }
+
+  h1 {
+    border-bottom: none;
+  }  
+}
+
+img:hover {
+  box-shadow: 1px 1px 20px #0f0e0e;
+}
